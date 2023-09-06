@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/styles06.css"/>
+</head>        
+<body>
+    <form method="GET" action="https://api.dev-master.ninja/html/form">
+        <input  type="hidden" 
+                name="id"
+                value="this is a hidden ID">
+
+        <h2>Kies een zoekmachine:</h2>
+        <div class="cascading-parent">
+            <a href="https://www.google.nl/">Google</a>
+            <img src="https://w7.pngwing.com/pngs/249/19/png-transparent-google-logo-g-suite-google-guava-google-plus-company-text-logo.png"width="100px">
+        </div>
+
+        <div class="cascading-child">
+            <a href="https://www.duckduckgo.com/">DuckDuckGo</a>
+            <img src="https://e7.pngegg.com/pngimages/124/307/png-clipart-duckduckgo-web-search-engine-google-search-anonymity-eyebrows-miscellaneous-logo.png"width="100px">
+        </div>
+            
+        <h2>Welke zoekmachine beviel beter?</h2>
+        
+
+    <select name="VoorkeurZoekmachine">
+        <option disabled selected>-- Choose one -- </option>
+        <option value="G">Google</option>
+        <option value="D">DuckDuckGo</option> 
+     </select>
+     
+     <br>
+        <input type="submit" name="thebutton" value="Save!">
+    </form>
+</body>
+</html>

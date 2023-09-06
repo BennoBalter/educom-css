@@ -1,0 +1,28 @@
+h2 {
+    font-size: 22px;
+    color: rgb(115, 80, 255);
+    font: caption;
+} 
+
+a {
+    font-size: 32px;
+    font:oblique;
+    color: aquamarine;
+    text-align:justify;
+}
+
+.cascading-parent a {
+    color: #FD0;
+}
+
+.cascading-child img {
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}
+
+img {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)!important;
+}
+
+Select[name="VoorkeurZoekmachine"] option {
+    font-size: 60px;
+}
