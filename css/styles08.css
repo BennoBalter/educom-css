@@ -1,0 +1,29 @@
+/* unvisited link */
+a:link {
+    color: red;
+  }
+  
+/* visited link */
+a:visited {
+    color: green;
+  }
+  
+/* mouse over link */
+a:hover {
+    color: hotpink;
+  }
+  
+/* selected link */
+a:active {
+    color: blue;
+  }
+
+/* verplichte tekst is geel */
+input:required {
+    background-color: yellow;
+  }
+
+/* ontvangen tekst is rood */
+input.received:read-only {
+    background-color: rgb(255, 0, 0);
+  }
