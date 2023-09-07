@@ -1,0 +1,41 @@
+.site-font {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+}
+
+.site-square {
+    width: 200px;
+    height: 200px;
+}
+
+.dot {
+    height: 250px;
+    width: 250px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display:inline-block;
+    text-align: right!important;
+}
+
+.site-color {
+    background-color: #00820f; /*kleur van de blokken is groen en niet grijs omdat de class "site-color" als laatste gespecificeerd wordt 
+    in het CSS-bestand, na .dot*/
+    color: #da4db9;
+}
+
+span.dot {
+    position: relative;
+    left: 300px;
+    border: 10px solid #fff200; /*ik laat border kleur hier staan om aan te tonen dat 
+    de border kleur zonder !important in de border class selector hier beneden geel zou zijn, 
+    selectors van element én class winnen omdat deze specifieker zijn dan selectors van een class alleen (element niet gespecificeerd)*/
+    text-align: left;
+}
+
+.border {
+    border: 10px solid #00820f;
+}
+
+div.border {
+    border: 10px solid rgb(0, 119, 255);
+}
