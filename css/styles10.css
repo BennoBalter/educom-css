@@ -1,0 +1,136 @@
+:root {
+
+    /* FONTS */
+    --regular: "Arial";
+    
+    /* COLORS */
+    --dark-brown: #402214;
+    --lighter-brown:  #774231;
+    --lightest-brown: #aa4b1b;
+    
+    --darker-red: #b31714;
+    --lighter-red: #dc3439;
+    
+    --white: #FFF;
+    --black: #000;
+    
+    /* PADDINGS */
+    --padding-top: 50px;
+    --padding-right: 30px;
+    --padding-bottom: 50px;
+    --padding-left: 40px;
+
+    /* BUTTON-STYLING */
+    --button-width: 200px;
+    --button-padding: 10px;
+    --button-color: #13fe23;
+    --button-background-color: rgb(0, 21, 255);
+
+    --button-border-radius: 10px;
+
+    --button-webkit-box-shadow: 0px 0px 74px 37px rgba(255,0,255,1);
+    --button-moz-box-shadow: 0px 0px 74px 37px rgba(255,0,255,1);
+    --button-box-shadow: 0px 0px 74px 37px rgba(255,0,255,1);
+
+    --button-text-decoration: none;
+    
+    --button-transition: all 0.5s ease;
+
+    /* HOVER-BUTTON-STYLING */
+    --button-hover-background-color: #bcff02;
+
+    --button-hover-text-decoration: none;
+
+    /* GRADIENT-BUTTON-STYLING */
+    --button-gradient-background: radial-gradient(circle, rgba(255,10,64,1) 0%, rgba(27,121,231,1) 100%);
+
+}
+    /* End of font, color, padding and button-styling root */   
+
+/* Button styling using selectors */
+.button1 a {
+    width: 200px;
+    padding: 10px;
+    color: #FFF;
+    background-color: #F00;
+    
+    /* ROUNDING THE CORNERS */
+    border-radius: 10px;
+    
+    /* CREATED WITH THE SHADOW GENERATOR */
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.6);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.6);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.6);
+
+    /* Let's get rid of the underline */
+    text-decoration: none;
+    
+    /* Transition effect */
+    transition: all 0.5s ease;
+}
+
+.button1 a:hover {
+    background-color: #AF1F16;
+    /* Let's get rid of the underline */
+    text-decoration: none;
+}
+
+/* Button styling using variables */
+.button2 a {
+    width: var(--button-width);
+    padding: var(--button-padding);
+    color: var(--button-color);
+    background-color: var(--button-background-color);
+    
+    /* ROUNDING THE CORNERS */
+    border-radius: var(--button-border-radius);
+    
+    /* CREATED WITH THE SHADOW GENERATOR */
+    -webkit-box-shadow: var(--button-webkit-box-shadow);
+    -moz-box-shadow: var(--button-moz-box-shadow);
+    box-shadow: var(--button-box-shadow);
+
+    /* Let's get rid of the underline */
+    text-decoration: var(--button-text-decoration);
+    
+    /* Transition effect */
+    transition: var(--button-transition);
+}
+
+.button2 a:hover {
+    background-color: var(--button-hover-background-color);
+    /* Let's get rid of the underline */
+    text-decoration: var(--button-hover-text-decoration);
+}
+
+/* Button styling using variables, with gradient */
+.button3 a {
+    width: var(--button-width);
+    padding: var(--button-padding);
+    color: var(--button-color);
+    background-color: var(--button-background-color);
+    
+    /* ROUNDING THE CORNERS */
+    border-radius: var(--button-border-radius);
+    
+    /* CREATED WITH THE SHADOW GENERATOR */
+    -webkit-box-shadow: var(--button-webkit-box-shadow);
+    -moz-box-shadow: var(--button-moz-box-shadow);
+    box-shadow: var(--button-box-shadow);
+
+    /* Let's get rid of the underline */
+    text-decoration: var(--button-text-decoration);
+    
+    /* Transition effect */
+    transition: var(--button-transition);
+}
+
+.button3 a {
+    background: var(--button-gradient-background);
+}
+
+.button3 a:hover {
+    background: var(--button-hover-background-color); /*wat is het verschil tussen background en background-color?*/
+    /* Let's get rid of the underline */
+    text-decoration: var(--button-hover-text-decoration);
+}
