@@ -1,0 +1,46 @@
+:root {
+
+/* FONTS */
+--regular: "Arial";
+
+/* COLORS */
+--dark-brown: #402214;
+--lighter-brown:  #774231;
+--lightest-brown: #aa4b1b;
+
+--darker-red: #b31714;
+--lighter-red: #dc3439;
+
+--white: #FFF;
+--black: #000;
+
+/* PADDINGS */
+--padding-top: 50px;
+--padding-right: 30px;
+--padding-bottom: 50px;
+--padding-left: 40px;
+}
+
+/* End of font, color and padding root */   
+
+h2 {
+    font-family: var(--regular);
+    color: var(--lightest-brown);
+}
+
+div {
+    border: 3px solid black;
+    padding-top: var(--padding-top);
+    padding-right: var(--padding-right);
+    padding-bottom: var(--padding-bottom);
+    padding-left: var(--padding-left);
+    width: fit-content;
+  }
+
+div.parlando {
+    background-color: rgb(189, 56, 255);
+}
+
+.zang {
+    background-color: rgb(56, 255, 199);
+}
