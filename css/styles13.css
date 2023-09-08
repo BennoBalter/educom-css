@@ -8,19 +8,47 @@ html, body{
     width: 100%;
     background-color:#FFF;
     color: #000000;
-    padding: 40px;/*tekst valt rechts van de pagina, hoe voorkom je dit? */
+    padding: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.menu {
+/* Start of menu */
+
+.menu-button {
+    color: #000000;
     position: fixed;
     top: 20px;
     right: 20px;
     font-size: 18px;
     font-weight: bold;
+
+    cursor: pointer;
+    transition: all 0.4s ease;
+    z-index: 5000 !important;
 }
+
+.menu-button:hover {
+    background-color: #FFF000;
+}
+
+.dropdown .menu-button:hover  {
+    top: 0px;
+}
+
+.dropdown {
+    position: fixed;
+    top: -400px;
+    left: 0;
+    right: 0;
+    height: 200px;
+    background-color: rgb(60, 125, 70);
+    transition: all 0.4s ease;
+    padding: 40px;
+}
+
+/* End of menu */
 
 .logo {
     position: fixed;
